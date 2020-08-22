@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		4022000124F0A0D800FF9850 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4022000024F0A0D800FF9850 /* AppDelegate.swift */; };
 		4022000324F0A0D800FF9850 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4022000224F0A0D800FF9850 /* SceneDelegate.swift */; };
-		4022000524F0A0D800FF9850 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4022000424F0A0D800FF9850 /* ViewController.swift */; };
-		4022000824F0A0D800FF9850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4022000624F0A0D800FF9850 /* Main.storyboard */; };
 		4022000A24F0A0DC00FF9850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4022000924F0A0DC00FF9850 /* Assets.xcassets */; };
 		4022000D24F0A0DC00FF9850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4022000B24F0A0DC00FF9850 /* LaunchScreen.storyboard */; };
+		4022001824F0EE0B00FF9850 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4022000424F0A0D800FF9850 /* ViewController.swift */; };
+		4022001924F0F16200FF9850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4022000624F0A0D800FF9850 /* Main.storyboard */; };
+		4022001B24F0F1CC00FF9850 /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4022001A24F0F1CC00FF9850 /* PokemonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		4022000924F0A0DC00FF9850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4022000C24F0A0DC00FF9850 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4022000E24F0A0DC00FF9850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4022001A24F0F1CC00FF9850 /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
 		4022FFFD24F0A0D800FF9850 /* pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,6 +65,7 @@
 				4022000924F0A0DC00FF9850 /* Assets.xcassets */,
 				4022000B24F0A0DC00FF9850 /* LaunchScreen.storyboard */,
 				4022000E24F0A0DC00FF9850 /* Info.plist */,
+				4022001A24F0F1CC00FF9850 /* PokemonTableViewCell.swift */,
 			);
 			path = pokedex;
 			sourceTree = "<group>";
@@ -125,9 +128,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4022001924F0F16200FF9850 /* Main.storyboard in Resources */,
 				4022000D24F0A0DC00FF9850 /* LaunchScreen.storyboard in Resources */,
 				4022000A24F0A0DC00FF9850 /* Assets.xcassets in Resources */,
-				4022000824F0A0D800FF9850 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4022000524F0A0D800FF9850 /* ViewController.swift in Sources */,
 				4022000124F0A0D800FF9850 /* AppDelegate.swift in Sources */,
+				4022001B24F0F1CC00FF9850 /* PokemonTableViewCell.swift in Sources */,
+				4022001824F0EE0B00FF9850 /* ViewController.swift in Sources */,
 				4022000324F0A0D800FF9850 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,14 +291,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AFBH9Z67M2;
 				INFOPLIST_FILE = pokedex/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.italo.pokedex;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.italomelo.pokedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,14 +310,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AFBH9Z67M2;
 				INFOPLIST_FILE = pokedex/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.italo.pokedex;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.italomelo.pokedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
