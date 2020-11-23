@@ -14,13 +14,19 @@ class PokemonListViewController: UIViewController , UITableViewDelegate, UITable
     
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     
-    let list : NSMutableArray = NSMutableArray()
+    var list : NSMutableArray = NSMutableArray()
+    
+    var pokemonSelected : Pokemon!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         listAllPokemons()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        pokemonSelected = list[indexPath.row] as? Pokemon
+        showPokemon()
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.list.count
@@ -35,7 +41,9 @@ class PokemonListViewController: UIViewController , UITableViewDelegate, UITable
                         switch statusCode {
                         case 200:
                             do {
-                                let pokemon = try result!.get() as Pokemon
+                                self.list.removeObject(at: indexPath.row)
+                                let pokemon = try result!.get()
+                                self.list.insert(pokemon, at: indexPath.row)
                                     pokemonCell.configure(with: pokemon, idPokemon : indexPath.row + 1)
                                     pokemonCell.tag = indexPath.row
                             }catch{
@@ -81,5 +89,20 @@ class PokemonListViewController: UIViewController , UITableViewDelegate, UITable
                         }
                     }
         }
+    
+    func showPokemon(){
+        self.performSegue(withIdentifier: "POKEMONDETAIL", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "POKEMONDETAIL"
+        {
+            let controller = (segue.destination as! PokemonDetailViewController)
+            
+            controller.pokemon = pokemonSelected
+            
+        }
+    }
 
 }

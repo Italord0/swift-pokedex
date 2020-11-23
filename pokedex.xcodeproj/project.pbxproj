@@ -21,6 +21,7 @@
 		40C948D1256AF76500DE7510 /* PokemonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C948D0256AF76500DE7510 /* PokemonListViewController.swift */; };
 		40DDC0F3256B138B00E4BCFD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DDC0F2256B138B00E4BCFD /* CardView.swift */; };
 		40DDC0F6256B139E00E4BCFD /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DDC0F5256B139E00E4BCFD /* GradientView.swift */; };
+		40DDC0F9256B790700E4BCFD /* PokemonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DDC0F8256B790700E4BCFD /* PokemonDetailViewController.swift */; };
 		8B85EC597DA62DD4DB32FF57 /* Pods_pokedex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F024D291D0C9413E5D159301 /* Pods_pokedex.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		40C948D0256AF76500DE7510 /* PokemonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListViewController.swift; sourceTree = "<group>"; };
 		40DDC0F2256B138B00E4BCFD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		40DDC0F5256B139E00E4BCFD /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		40DDC0F8256B790700E4BCFD /* PokemonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewController.swift; sourceTree = "<group>"; };
 		CA890D4C65FC78E95F668519 /* Pods-pokedex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokedex.release.xcconfig"; path = "Target Support Files/Pods-pokedex/Pods-pokedex.release.xcconfig"; sourceTree = "<group>"; };
 		F024D291D0C9413E5D159301 /* Pods_pokedex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokedex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				40C948D0256AF76500DE7510 /* PokemonListViewController.swift */,
+				40DDC0F8256B790700E4BCFD /* PokemonDetailViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				40DDC0F6256B139E00E4BCFD /* GradientView.swift in Sources */,
 				4022000124F0A0D800FF9850 /* AppDelegate.swift in Sources */,
 				4022001B24F0F1CC00FF9850 /* PokemonTableViewCell.swift in Sources */,
+				40DDC0F9256B790700E4BCFD /* PokemonDetailViewController.swift in Sources */,
 				40DDC0F3256B138B00E4BCFD /* CardView.swift in Sources */,
 				40C948B1256ADCC800DE7510 /* Util.swift in Sources */,
 				4022001824F0EE0B00FF9850 /* ViewController.swift in Sources */,
