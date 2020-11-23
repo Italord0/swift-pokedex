@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,18 @@
 		4022001824F0EE0B00FF9850 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4022000424F0A0D800FF9850 /* ViewController.swift */; };
 		4022001924F0F16200FF9850 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4022000624F0A0D800FF9850 /* Main.storyboard */; };
 		4022001B24F0F1CC00FF9850 /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4022001A24F0F1CC00FF9850 /* PokemonTableViewCell.swift */; };
+		40C948B1256ADCC800DE7510 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C948B0256ADCC800DE7510 /* Util.swift */; };
+		40C948BA256ADD6D00DE7510 /* PokemonStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C948B9256ADD6D00DE7510 /* PokemonStruct.swift */; };
+		40C948BE256AE17300DE7510 /* PokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C948BD256AE17300DE7510 /* PokemonController.swift */; };
+		40C948C2256AE1E800DE7510 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C948C1256AE1E800DE7510 /* Constants.swift */; };
+		40C948D1256AF76500DE7510 /* PokemonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C948D0256AF76500DE7510 /* PokemonListViewController.swift */; };
+		40DDC0F3256B138B00E4BCFD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DDC0F2256B138B00E4BCFD /* CardView.swift */; };
+		40DDC0F6256B139E00E4BCFD /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DDC0F5256B139E00E4BCFD /* GradientView.swift */; };
+		8B85EC597DA62DD4DB32FF57 /* Pods_pokedex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F024D291D0C9413E5D159301 /* Pods_pokedex.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FCA7FF9253BAD4FAE478CE3 /* Pods-pokedex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokedex.debug.xcconfig"; path = "Target Support Files/Pods-pokedex/Pods-pokedex.debug.xcconfig"; sourceTree = "<group>"; };
 		4022000024F0A0D800FF9850 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4022000224F0A0D800FF9850 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4022000424F0A0D800FF9850 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +35,15 @@
 		4022000E24F0A0DC00FF9850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4022001A24F0F1CC00FF9850 /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
 		4022FFFD24F0A0D800FF9850 /* pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C948B0256ADCC800DE7510 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		40C948B9256ADD6D00DE7510 /* PokemonStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonStruct.swift; sourceTree = "<group>"; };
+		40C948BD256AE17300DE7510 /* PokemonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonController.swift; sourceTree = "<group>"; };
+		40C948C1256AE1E800DE7510 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		40C948D0256AF76500DE7510 /* PokemonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListViewController.swift; sourceTree = "<group>"; };
+		40DDC0F2256B138B00E4BCFD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		40DDC0F5256B139E00E4BCFD /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		CA890D4C65FC78E95F668519 /* Pods-pokedex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokedex.release.xcconfig"; path = "Target Support Files/Pods-pokedex/Pods-pokedex.release.xcconfig"; sourceTree = "<group>"; };
+		F024D291D0C9413E5D159301 /* Pods_pokedex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokedex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B85EC597DA62DD4DB32FF57 /* Pods_pokedex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3296E54CB59C8AFA726E750B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F024D291D0C9413E5D159301 /* Pods_pokedex.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4022FFF424F0A0D800FF9850 = {
 			isa = PBXGroup;
 			children = (
 				4022FFFF24F0A0D800FF9850 /* pokedex */,
 				4022FFFE24F0A0D800FF9850 /* Products */,
+				F8B3956B91B2666093EF1D6F /* Pods */,
+				3296E54CB59C8AFA726E750B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +87,11 @@
 		4022FFFF24F0A0D800FF9850 /* pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				40C948B8256ADD3400DE7510 /* cell */,
+				40C948B7256ADD1C00DE7510 /* api */,
+				40C948B6256ADD1800DE7510 /* view */,
+				40C948B5256ADD0E00DE7510 /* model */,
+				40C948AF256ADCB800DE7510 /* util */,
 				4022000024F0A0D800FF9850 /* AppDelegate.swift */,
 				4022000224F0A0D800FF9850 /* SceneDelegate.swift */,
 				4022000424F0A0D800FF9850 /* ViewController.swift */,
@@ -65,9 +99,68 @@
 				4022000924F0A0DC00FF9850 /* Assets.xcassets */,
 				4022000B24F0A0DC00FF9850 /* LaunchScreen.storyboard */,
 				4022000E24F0A0DC00FF9850 /* Info.plist */,
-				4022001A24F0F1CC00FF9850 /* PokemonTableViewCell.swift */,
 			);
 			path = pokedex;
+			sourceTree = "<group>";
+		};
+		40C948AF256ADCB800DE7510 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				40DDC0F1256B137700E4BCFD /* ui */,
+				40C948B0256ADCC800DE7510 /* Util.swift */,
+				40C948C1256AE1E800DE7510 /* Constants.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		40C948B5256ADD0E00DE7510 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				40C948B9256ADD6D00DE7510 /* PokemonStruct.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		40C948B6256ADD1800DE7510 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				40C948D0256AF76500DE7510 /* PokemonListViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		40C948B7256ADD1C00DE7510 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				40C948BD256AE17300DE7510 /* PokemonController.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		40C948B8256ADD3400DE7510 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				4022001A24F0F1CC00FF9850 /* PokemonTableViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		40DDC0F1256B137700E4BCFD /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				40DDC0F2256B138B00E4BCFD /* CardView.swift */,
+				40DDC0F5256B139E00E4BCFD /* GradientView.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		F8B3956B91B2666093EF1D6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FCA7FF9253BAD4FAE478CE3 /* Pods-pokedex.debug.xcconfig */,
+				CA890D4C65FC78E95F668519 /* Pods-pokedex.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4022001124F0A0DC00FF9850 /* Build configuration list for PBXNativeTarget "pokedex" */;
 			buildPhases = (
+				34532A8EDF40D5F4612E5346 /* [CP] Check Pods Manifest.lock */,
 				4022FFF924F0A0D800FF9850 /* Sources */,
 				4022FFFA24F0A0D800FF9850 /* Frameworks */,
 				4022FFFB24F0A0D800FF9850 /* Resources */,
+				968D84536B66B643C0289B72 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,15 +231,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34532A8EDF40D5F4612E5346 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pokedex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		968D84536B66B643C0289B72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pokedex/Pods-pokedex-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pokedex/Pods-pokedex-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pokedex/Pods-pokedex-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4022FFF924F0A0D800FF9850 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C948BA256ADD6D00DE7510 /* PokemonStruct.swift in Sources */,
+				40C948BE256AE17300DE7510 /* PokemonController.swift in Sources */,
+				40DDC0F6256B139E00E4BCFD /* GradientView.swift in Sources */,
 				4022000124F0A0D800FF9850 /* AppDelegate.swift in Sources */,
 				4022001B24F0F1CC00FF9850 /* PokemonTableViewCell.swift in Sources */,
+				40DDC0F3256B138B00E4BCFD /* CardView.swift in Sources */,
+				40C948B1256ADCC800DE7510 /* Util.swift in Sources */,
 				4022001824F0EE0B00FF9850 /* ViewController.swift in Sources */,
 				4022000324F0A0D800FF9850 /* SceneDelegate.swift in Sources */,
+				40C948C2256AE1E800DE7510 /* Constants.swift in Sources */,
+				40C948D1256AF76500DE7510 /* PokemonListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,12 +430,13 @@
 		};
 		4022001224F0A0DC00FF9850 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FCA7FF9253BAD4FAE478CE3 /* Pods-pokedex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AFBH9Z67M2;
 				INFOPLIST_FILE = pokedex/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,12 +450,13 @@
 		};
 		4022001324F0A0DC00FF9850 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA890D4C65FC78E95F668519 /* Pods-pokedex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AFBH9Z67M2;
 				INFOPLIST_FILE = pokedex/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
